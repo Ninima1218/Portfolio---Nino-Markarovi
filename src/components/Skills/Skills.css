@@ -1,0 +1,105 @@
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 40px;
+    background-image: url('@assets/back.webp');
+    /* если уже конвертируешь */
+    background-size: cover;
+    background-position: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skills-list {
+    flex: 1 1 400px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-list h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-list h3:hover {
+    transform: scale(1.1);
+}
+
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.learning {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.image-text-wrapper {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-summary {
+    background-color: rgba(170, 171, 172, 0.8);
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skills-summary:hover {
+    transform: scale(1.03);
+}
+
+.skills-summary p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.skills-image {
+    width: 80%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .image-text-wrapper,
+    .skills-list {
+        width: 100%;
+        flex: none;
+        align-items: center;
+    }
+
+    .skills-summary {
+        width: 100%;
+    }
+
+    .skills-image {
+        width: 100%;
+        max-height: 200px;
+    }
+}

@@ -1,0 +1,51 @@
+.vision {
+    width: 100%;
+    padding: 60px 40px;
+    background: linear-gradient(to right, #202020, #030303);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.vision-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.journey,
+.my-vision {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid #d3a857;
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.journey:hover,
+.my-vision:hover {
+    transform: translateY(-5px);
+}
+
+.vision h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.vision p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+/* 📱 Адаптив */
+@media (max-width: 768px) {
+    .vision-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .journey,
+    .my-vision {
+        padding: 20px;
+    }
+}

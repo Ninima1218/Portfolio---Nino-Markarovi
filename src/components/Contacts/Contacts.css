@@ -1,0 +1,41 @@
+.contacts-div {
+    text-align: center;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 158, 158);
+}
+
+.contacts-p {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.contacts-nav {
+    list-style: none;
+    padding: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+}
+
+.contacts-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #685555;
+}
+
+.contact-link .fa {
+    margin-right: 5px;
+}

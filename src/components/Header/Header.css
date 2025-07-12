@@ -1,0 +1,94 @@
+.header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    height: 60px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    /* лёгкая тень на фоне */
+    backdrop-filter: blur(4px);
+    /* размытие фона */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    /* читаемость на фоне */
+}
+
+.menu-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, filter 0.3s;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8) invert(1.2);
+}
+
+.burger-menu {
+    position: relative;
+}
+
+.burger-menu-content {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .header-name {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .burger-menu-content {
+        top: 50px;
+        right: 10px;
+        width: 130px;
+        font-size: 14px;
+    }
+}
