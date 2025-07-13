@@ -3,7 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --font-mono: 'Roboto Mono', monospace;
+  --font-condensed: 'Roboto Condensed', sans-serif;
+  --font-social: 'Poppins', sans-serif;
 }
+
 
 .logo {
   height: 6em;

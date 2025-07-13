@@ -1,0 +1,118 @@
+.tech-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tech-column {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.tech-title {
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 18px;
+    /* ➖ сжатый внутренний отступ между карточками */
+    justify-content: center;
+    width: 100%;
+}
+
+.tech-card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding-bottom: 10px;
+    /* ➕ место под выносную подпись */
+}
+
+.tech-card:hover {
+    background-color: white;
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+.tech-card:hover .tech-icon {
+    filter: invert(0);
+}
+
+.tech-label {
+    position: absolute;
+    bottom: -22px;
+    /* ➕ вынос за рамку */
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+/* 📱 Адаптив */
+
+@media (max-width: 768px) {
+    .tech-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .tech-column {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .tech-title {
+        font-size: 18px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 90px);
+        gap: 14px;
+    }
+
+    .tech-card {
+        width: 90px;
+        height: 90px;
+        padding-bottom: 20px;
+    }
+
+    .tech-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .tech-label {
+        font-size: 13px;
+        bottom: -14px;
+    }
+}
