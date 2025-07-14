@@ -1,10 +1,11 @@
 .tech-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-between;
+    gap: 48px;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
+    padding: 0 80px;
     margin: 0 auto;
 }
 
@@ -92,7 +93,7 @@
     }
 
     .tech-title {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .tech-grid {
@@ -112,7 +113,12 @@
     }
 
     .tech-label {
-        font-size: 13px;
-        bottom: -14px;
+        font-size: 15px;
+        bottom: -16px;
+    }
+
+    .skills-heading {
+        font-size: 28px;
+        /* раньше 26px */
     }
 }

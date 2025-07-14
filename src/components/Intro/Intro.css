@@ -6,7 +6,6 @@
     align-items: center;
     padding: 80px 0 40px;
     background-image: url('@assets/myphoto.webp');
-    /* путь заменить */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +27,8 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     width: 70%;
     max-width: 600px;
     gap: 15px;
