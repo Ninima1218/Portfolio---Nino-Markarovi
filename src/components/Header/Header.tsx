@@ -18,28 +18,25 @@ const Header = () => {
     };
 
     if (isMenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside); // ➕ use mousedown
     }
-    return () => document.removeEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, [isMenuOpen]);
 
   return (
     <header className="header">
       <img src={logo} alt="Logo" className="header-logo" />
-      <h1 className="header-name">Nino</h1>
       <div className="burger-menu">
-        <img
-          src={menuIcon}
-          alt="Menu"
-          className="menu-icon"
-          onClick={toggleMenu}
-        />
-        {isMenuOpen && (
-          <div className="burger-menu-content" ref={menuRef}>
-            <NavLink />
-          </div>
-        )}
+  <img src={menuIcon} className="menu-icon" onClick={toggleMenu} />
+  {isMenuOpen && (
+      <div className="burger-menu-content">
+        <NavLink />
       </div>
+    )}
+    </div>
     </header>
   );
 };

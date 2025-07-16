@@ -9,14 +9,15 @@ import './App.css';
 const App = () => {
   return (
     <div className="app">
-      <div className="intro-container">
-        <Header />
-        <Intro />
+      <Header />
+      <Intro />
+      
+      <div className="layout-container">
+        <Skills />
+        <Projects />
+        <Vision />
+        <Footer />
       </div>
-      <Skills />
-      <Projects />
-      <Vision />
-      <Footer />
     </div>
   );
 };
