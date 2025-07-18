@@ -11,28 +11,28 @@ export const projects = [
     description: 'Modern landing for a beauty salon with service highlights, booking CTA, and calming tones. Built using responsive layout and visual accents.',
     imageUrl: BeautySalon,
     link: 'https://alchemybeauty.ru/',
-    stack: 'React, Typescript, Vite'
+    stack: ['React', 'Typescript', 'Vite'],
   },
   {
     title: 'Portfolio Website for Nail Master',
     description: 'Personal website with gallery, booking form, and contact sections. Stylized layout with clean typography and mobile-first responsiveness.',
     imageUrl: NailMaster,
     link: 'https://darina1970.github.io/Natali_Nails/',
-    stack: 'React, Typescript, Vite'
+    stack: ['React', 'Typescript', 'Vite'],
   },
   {
     title: 'Responsive Website for a Law Firm',
     description: 'Elegant and functional site showcasing services and contact information. Built with HTML, CSS, and JS for seamless cross-device experience.',
     imageUrl: Justice,
     link: 'https://project-itgirlschool.github.io/fr83_justice/#services',
-    stack: 'React, JS'
+    stack: ['React', 'JS'],
   },
   {
     title: 'Speak Up: Language Learning Platform',
     description: 'Self-directed template using React + MobX. Features grammar, vocabulary themes, and listening components for immersive learning.',
     imageUrl: LanguageApp,
     link: '',
-    stack: 'React, JS'
+    stack: ['React', 'JS'],
     },
   {
     title: 'Fitness Center Landing Page',
