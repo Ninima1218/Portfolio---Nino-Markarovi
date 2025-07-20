@@ -1,28 +1,28 @@
 .tech-wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 48px;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 48px;
     max-width: 1000px;
     width: 100%;
-    padding: 0 80px;
     margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
 }
 
 .tech-column {
-    width: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     text-align: center;
+    width: 240px;
 }
 
 .tech-title {
     font-size: 24px;
     color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 10px;
+    font-family: var(--font-condensed);
     letter-spacing: 0.5px;
 }
 
@@ -30,25 +30,23 @@
     display: grid;
     grid-template-columns: repeat(2, 100px);
     gap: 18px;
-    /* ➖ сжатый внутренний отступ между карточками */
     justify-content: center;
     width: 100%;
 }
 
 .tech-card {
-    position: relative;
     width: 100px;
     height: 100px;
-    background-color: transparent;
     border: 2px solid white;
     border-radius: 10px;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    position: relative;
     cursor: pointer;
+    transition: background-color 0.3s ease;
     padding-bottom: 10px;
-    /* ➕ место под выносную подпись */
 }
 
 .tech-card:hover {
@@ -69,16 +67,13 @@
 .tech-label {
     position: absolute;
     bottom: -22px;
-    /* ➕ вынос за рамку */
     left: 0;
     right: 0;
     font-size: 14px;
     color: white;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--font-mono);
     text-align: center;
 }
-
-/* 📱 Адаптив */
 
 @media (max-width: 768px) {
     .tech-wrapper {
@@ -113,12 +108,7 @@
     }
 
     .tech-label {
-        font-size: 15px;
+        font-size: 13px;
         bottom: -16px;
-    }
-
-    .skills-heading {
-        font-size: 28px;
-        /* раньше 26px */
     }
 }
