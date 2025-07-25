@@ -1,28 +1,32 @@
+
 import './Vision.css';
 
-const Vision = () => (
-  <section className="vision" id="vision">
-    <div className="vision-wrapper">
-      <div className="journey">
-        <h2>My Journey</h2>
-        <p>
-          Originally, my career took root in education, working at a university for many years.
-          But my intrinsic desire to innovate and see tangible results led me to transition into IT.
-          Over the past year, I've immersed myself in frontend development and found deep satisfaction
-          in this ever-evolving creative field.
-        </p>
-      </div>
-
-      <div className="my-vision">
-        <h2>My Vision</h2>
-        <p>
-          I love exploring new technologies and crafting elegant solutions.
-          My goal is to build intuitive websites and apps that improve lives.
-          I'm driven by curiosity, creativity, and the joy of meaningful impact.
-        </p>
-      </div>
-    </div>
-  </section>
-);
+const Vision = () => {
+    return (
+        <section className="vision-section" id="vision">
+            <div className="vision-content">
+                <div className="vision-wrapper">
+                    <div className="journey">
+                        <h2>My Journey</h2>
+                        <p>
+                            My path in programming began with curiosity and has evolved into a passion for creating
+                            meaningful digital experiences. Starting with HTML and CSS, I've expanded my expertise
+                            to include modern frameworks and tools that enable me to build comprehensive web solutions.
+                        </p>
+                    </div>
+                    <div className="my-vision">
+                        <h2>My Vision</h2>
+                        <p>
+                            I believe in the power of clean, efficient code and user-centered design. My goal is to
+                            create applications that not only function flawlessly but also provide intuitive and
+                            engaging experiences. I'm committed to continuous learning and staying current with
+                            emerging technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
 export default Vision;

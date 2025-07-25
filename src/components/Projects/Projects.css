@@ -1,9 +1,15 @@
+
 .projects-section {
     width: 100vw;
     padding: 40px 0;
     background: linear-gradient(to right, #e2e0db, #666561);
-    padding: 40px 32px;
     color: #fff;
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
 .projects-section h2 {
@@ -18,10 +24,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-    box-sizing: border-box;
 }
 
 .projects-item {
@@ -131,12 +133,11 @@
     transition-delay: 0.5s;
 }
 
-.projects-item:nth-child(6) {
-    transition-delay: 0.6s;
-}
-
-/* 📱 Адаптив */
 @media (max-width: 768px) {
+    .projects-content {
+        padding: 0 20px;
+    }
+
     .projects-section h2 {
         font-size: 28px;
     }

@@ -1,17 +1,22 @@
-.vision {
-    width: 100%;
-    padding: 60px 40px;
+
+.vision-section {
+    width: 100vw;
+    padding: 60px 0;
     background: linear-gradient(to right, #202020, #030303);
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+.vision-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
 .vision-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .journey,
@@ -28,18 +33,21 @@
     transform: translateY(-5px);
 }
 
-.vision h2 {
+.vision-section h2 {
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-.vision p {
+.vision-section p {
     line-height: 1.6;
     font-size: 17px;
 }
 
-/* 📱 Адаптив */
 @media (max-width: 768px) {
+    .vision-content {
+        padding: 0 20px;
+    }
+
     .vision-wrapper {
         grid-template-columns: 1fr;
     }
