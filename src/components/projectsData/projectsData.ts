@@ -1,5 +1,5 @@
 import Justice from '@assets/projects/justice.webp';
-import LanguageApp from '@assets/projects/language-app.webp';
+
 import BeautySalon from '@assets/projects/alchemy.webp';
 import NailMaster from '@assets/projects/natali-nails.webp';
 import Fistess from '@assets/projects/fitness-centre.webp';
@@ -27,13 +27,7 @@ export const projects = [
     link: 'https://project-itgirlschool.github.io/fr83_justice/#services',
     stack: ['React', 'JS'],
   },
-  {
-    title: 'Speak Up: Language Learning Platform',
-    description: 'Self-directed template using React + MobX. Features grammar, vocabulary themes, and listening components for immersive learning.',
-    imageUrl: LanguageApp,
-    link: '',
-    stack: ['React', 'JS'],
-    },
+  
   {
     title: 'Fitness Center Landing Page',
     description: 'Promotional website for a fitness club with class schedules, trainer bios, and contact options. Created in Tilda using visual composition and adaptive blocks.',
