@@ -23,17 +23,19 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: clamp(24px, 4vw, 40px);
 }
 
 .projects-item {
     background-color: #fdfdfd;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    padding: 20px;
+    padding: clamp(16px, 3vw, 24px);
     box-sizing: border-box;
     transition: transform 0.3s ease;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects-item:hover {
@@ -41,29 +43,30 @@
 }
 
 .projects-item img {
-    width: 87%;
-    height: 220px;
+    width: 100%;
+    height: clamp(180px, 25vw, 240px);
     object-fit: cover;
     border-radius: 8px;
-    margin: 0 0 15px 0;
+    margin: 0 0 clamp(12px, 2vw, 16px) 0;
     display: block;
 }
 
 .projects-item h3 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+    font-size: clamp(18px, 2.5vw, 22px);
     font-weight: 500;
     color: #333;
-    margin-bottom: 12px;
+    margin-bottom: clamp(8px, 1.5vw, 12px);
 }
 
 .projects-item p {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 17px;
+    font-size: clamp(15px, 2vw, 18px);
     font-weight: 400;
     color: #444;
     line-height: 1.5;
-    margin-bottom: 16px;
+    margin-bottom: clamp(12px, 2vw, 16px);
+    flex-grow: 1;
 }
 
 .project-stack {
@@ -133,30 +136,47 @@
     transition-delay: 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(20px, 3vw, 32px);
+    }
+}
+
+@media (max-width: 600px) {
     .projects-content {
         padding: 0 20px;
     }
 
     .projects-section h2 {
-        font-size: 28px;
+        font-size: clamp(24px, 4vw, 32px);
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: clamp(24px, 4vw, 32px);
     }
 
     .projects-item {
-        padding: 18px;
+        padding: clamp(16px, 3vw, 20px);
     }
 
-    .projects-item p {
-        font-size: 16px;
+    .projects-item img {
+        height: clamp(160px, 30vw, 200px);
     }
 
     .project-stack li {
-        font-size: 12px;
+        font-size: clamp(11px, 2vw, 13px);
         padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-content {
+        padding: 0 16px;
+    }
+
+    .projects-grid {
+        gap: 20px;
     }
 }

@@ -12,13 +12,22 @@
     padding: 0 32px;
 }
 
-.footer-content p {
+.footer p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: clamp(12px, 2vw, 15px);
+    color: white;
+    text-align: center;
     margin: 0;
-    font-size: 14px;
 }
 
 @media (max-width: 768px) {
     .footer-content {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 0 16px;
     }
 }

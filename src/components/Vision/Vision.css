@@ -1,4 +1,3 @@
-
 .vision-section {
     width: 100vw;
     padding: 60px 0;
@@ -16,31 +15,26 @@
 .vision-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: clamp(24px, 5vw, 48px);
 }
 
 .journey,
 .my-vision {
     background-color: rgba(255, 255, 255, 0.05);
     border-left: 3px solid #d3a857;
-    padding: 30px;
+    padding: clamp(20px, 4vw, 36px);
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
-.journey:hover,
-.my-vision:hover {
-    transform: translateY(-5px);
-}
-
 .vision-section h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: clamp(22px, 3.5vw, 32px);
+    margin-bottom: clamp(12px, 2vw, 18px);
 }
 
 .vision-section p {
     line-height: 1.6;
-    font-size: 17px;
+    font-size: clamp(15px, 2.2vw, 19px);
 }
 
 @media (max-width: 768px) {
@@ -50,10 +44,17 @@
 
     .vision-wrapper {
         grid-template-columns: 1fr;
+        gap: clamp(20px, 4vw, 32px);
+    }
+}
+
+@media (max-width: 600px) {
+    .vision-content {
+        padding: 0 16px;
     }
 
     .journey,
     .my-vision {
-        padding: 20px;
+        padding: clamp(16px, 4vw, 24px);
     }
 }

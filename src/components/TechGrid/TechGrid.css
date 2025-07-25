@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 48px;
+    gap: clamp(32px, 6vw, 56px);
     width: 100%;
 }
 
@@ -11,13 +11,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: clamp(18px, 3vw, 28px);
     text-align: center;
-    width: 240px;
+    width: clamp(200px, 30vw, 260px);
+    flex-shrink: 0;
 }
 
 .tech-title {
-    font-size: 24px;
+    font-size: clamp(20px, 3vw, 26px);
     color: white;
     font-family: var(--font-condensed);
     letter-spacing: 0.5px;
@@ -25,15 +26,15 @@
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(2, 100px);
-    gap: 18px;
+    grid-template-columns: repeat(2, clamp(80px, 12vw, 110px));
+    gap: clamp(14px, 2.5vw, 20px);
     justify-content: center;
     width: 100%;
 }
 
 .tech-card {
-    width: 100px;
-    height: 100px;
+    width: clamp(80px, 12vw, 110px);
+    height: clamp(80px, 12vw, 110px);
     border: 2px solid white;
     border-radius: 10px;
     background-color: transparent;
@@ -43,7 +44,7 @@
     position: relative;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    padding-bottom: 10px;
+    padding-bottom: clamp(8px, 1.5vw, 12px);
 }
 
 .tech-card:hover {
@@ -72,40 +73,56 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .tech-wrapper {
+        gap: clamp(24px, 5vw, 40px);
+    }
+
+    .tech-column {
+        width: clamp(180px, 28vw, 220px);
+    }
+}
+
+@media (max-width: 600px) {
     .tech-wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: clamp(32px, 6vw, 48px);
     }
 
     .tech-column {
         width: 100%;
-        max-width: 240px;
-    }
-
-    .tech-title {
-        font-size: 20px;
+        max-width: 280px;
     }
 
     .tech-grid {
-        grid-template-columns: repeat(2, 90px);
-        gap: 14px;
+        grid-template-columns: repeat(2, clamp(75px, 15vw, 95px));
+        gap: clamp(12px, 3vw, 18px);
     }
 
     .tech-card {
-        width: 90px;
-        height: 90px;
-        padding-bottom: 20px;
+        width: clamp(75px, 15vw, 95px);
+        height: clamp(75px, 15vw, 95px);
+        padding-bottom: clamp(16px, 3vw, 24px);
     }
 
     .tech-icon {
-        width: 36px;
-        height: 36px;
+        width: clamp(32px, 6vw, 40px);
+        height: clamp(32px, 6vw, 40px);
     }
 
     .tech-label {
-        font-size: 13px;
-        bottom: -16px;
+        font-size: clamp(12px, 2.2vw, 14px);
+        bottom: clamp(-18px, -3vw, -14px);
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-wrapper {
+        gap: 28px;
+    }
+
+    .tech-column {
+        max-width: 240px;
     }
 }
