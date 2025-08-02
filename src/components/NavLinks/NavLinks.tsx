@@ -2,7 +2,7 @@ import './NavLinks.css';
 
 const NavLink = () => {
   const links = [
-    { href: '#intro', label: 'Home' },
+    { href: '#headergit', label: 'Home' },
     { href: '#vision', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
