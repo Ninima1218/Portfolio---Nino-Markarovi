@@ -1,95 +1,52 @@
-.contacts-section {
-    width: 100vw;
-    padding: 40px 0;
-    background-color: rgb(160, 158, 158);
-}
-
-.contacts-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-    text-align: center;
-}
-
-.contacts-p {
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
-.contacts-nav {
-    list-style: none;
-    padding: 0;
+.footer-contacts-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 7px;
+    gap: 4px;
+    margin-top: -4px;
+    max-width: 320px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.contacts-nav li {
-    display: inline-block;
-    margin: 0 10px;
+.form-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 4px;
 }
 
-.contact-link {
-    text-decoration: none;
-    color: inherit;
-    font-size: 15px;
-    transition: color 0.3s ease;
+.form-subtitle {
+    font-size: 14px;
+    color: #4e4e4e;
+    line-height: 1.4;
+    margin-bottom: 6px;
 }
 
-.contact-link:hover {
-    color: #685555;
-}
-
-.contact-link .fa {
-    margin-right: 5px;
-}
-
-.contacts-section h2 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: clamp(28px, 4.5vw, 42px);
-    color: white;
-    text-align: center;
-    margin-bottom: clamp(24px, 4vw, 36px);
-    letter-spacing: 1px;
-}
-
-.contacts-section p {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: clamp(16px, 2.5vw, 20px);
-    color: white;
-    text-align: center;
-    max-width: clamp(400px, 60vw, 640px);
-    margin: 0 auto clamp(32px, 5vw, 48px);
-    line-height: 1.6;
-}
-
-.social-icons {
+.contact-form {
     display: flex;
-    justify-content: center;
-    gap: clamp(16px, 3vw, 24px);
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.social-icons img {
-    width: clamp(40px, 6vw, 55px);
-    height: clamp(40px, 6vw, 55px);
-    transition: transform 0.3s ease;
-    filter: invert(1);
+.contact-input {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
 }
 
-@media (max-width: 768px) {
-    .contacts-content {
-        padding: 0 20px;
-    }
+.contact-button {
+    padding: 10px;
+    background-color: #4d4c4c;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@media (max-width: 600px) {
-    .contacts-content {
-        padding: 0 16px;
-    }
-
-    .social-icons {
-        gap: clamp(12px, 4vw, 20px);
-    }
+.contact-button:hover {
+    background-color: #141414;
 }

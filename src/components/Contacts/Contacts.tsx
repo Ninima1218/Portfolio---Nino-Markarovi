@@ -1,51 +1,22 @@
-
 import './Contacts.css';
 
 const Contacts = () => {
-    return (
-        <section className="contacts-section" id="contacts">
-            <div className="contacts-content">
-                <p className="contacts-p">Let's get in touch!</p>
-                <nav>
-                    <ul className="contacts-nav">
-                        <li>
-                            <a
-                                href="mailto:yourname@email.com"
-                                className="contact-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="fa fa-envelope"></i>
-                                Email
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://linkedin.com/in/yourprofile"
-                                className="contact-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="fa fa-linkedin"></i>
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/yourusername"
-                                className="contact-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="fa fa-github"></i>
-                                GitHub
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-    );
+  return (
+    <div className="footer-contacts-form">
+      <p className="form-title">Let's get in touch!</p>
+      <p className="form-subtitle">Feel free to contact if you wanna collaborate with me</p>
+      <form className="contact-form">
+        <input
+          type="text"
+          placeholder="Write your message here..."
+          className="contact-input"
+        />
+        <button type="submit" className="contact-button">
+          Send it
+        </button>
+      </form>
+    </div>
+  );
 };
 
 export default Contacts;
