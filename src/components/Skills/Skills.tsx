@@ -1,4 +1,3 @@
-
 import './Skills.css';
 import TechGrid from '../TechGrid/TechGrid';
 

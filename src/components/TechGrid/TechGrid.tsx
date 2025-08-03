@@ -37,7 +37,7 @@ const TechGrid = () => (
     </div>
 
     <div className="tech-column">
-      <h3 className="tech-title">Libraries & Frameworks</h3>
+      <h3 className="tech-title">Libs</h3>
       <div className="tech-grid">
         {libraries.map(({ name, src }, i) => (
           <div key={i} className="tech-card">
@@ -49,7 +49,7 @@ const TechGrid = () => (
     </div>
 
     <div className="tech-column">
-      <h3 className="tech-title">Tools & Platforms</h3>
+      <h3 className="tech-title">Tools</h3>
       <div className="tech-grid">
         {tools.map(({ name, src }, i) => (
           <div key={i} className="tech-card">
