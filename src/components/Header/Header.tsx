@@ -62,7 +62,7 @@ const Header: React.FC = () => {
   }, [isMenuOpen, handleClickOutside]);
 
   return (
-    <header className="header">
+    <header id="header" className="header">
       <img src={logo} alt="Logo" className="header-logo" />
 
       <div className="burger-menu">

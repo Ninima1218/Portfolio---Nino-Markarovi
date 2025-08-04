@@ -40,6 +40,7 @@
 
 .burger-menu-content {
     position: absolute;
+    width: 140px;
     top: 100%;
     right: 0;
     background-color: rgba(255, 255, 255, 0.95);
@@ -110,7 +111,7 @@
         top: clamp(45px, 8vw, 60px);
         right: clamp(12px, 3vw, 20px);
         width: calc(100vw - 32px);
-        max-width: 280px;
+        max-width: 320px;
         box-sizing: border-box;
     }
 }

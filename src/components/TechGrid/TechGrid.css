@@ -177,17 +177,40 @@
 
 @media (max-width: 480px) {
     .tech-wrapper {
-            flex-direction: column;
-            align-items: center;
-            gap: clamp(24px, 5vw, 36px);
-        }
-    
-        .tech-column {
-            width: 100%;
-            max-width: 240px;
-        }
-    
-        .tech-grid {
-            grid-template-columns: repeat(1, clamp(75px, 60vw, 120px));
-        }
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: clamp(16px, 4vw, 24px);
+        padding-inline: clamp(4px, 2vw, 12px);
+    }
+
+    .tech-title,
+    .tech-label {
+        display: none;
+    }
+
+    .tech-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(16px, 4vw, 24px);
+        width: clamp(80px, 28vw, 100px);
+    }
+
+    .tech-grid {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 4vw, 24px);
+    }
+
+    .tech-card {
+        width: clamp(40px, 20vw, 60px);
+        height: clamp(40px, 20vw, 60px);
+        padding-bottom: 0;
+    }
+
+    .tech-icon {
+        width: clamp(28px, 6vw, 36px);
+        height: clamp(28px, 6vw, 36px);
+    }
 }

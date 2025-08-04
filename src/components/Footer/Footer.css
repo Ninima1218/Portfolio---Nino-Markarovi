@@ -28,27 +28,25 @@ footer {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    width: 70%;
-    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 0 38px 10px;
-    gap: 280px;
+    padding-bottom: 10px;
 }
 
 .footer-menu {
     display: flex;
     flex-direction: column;
-    width: 240px;
+    width: 100%;
 }
 
 .footer-contacts {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
-    width: 600px;
+    width: 100%;
 }
 
 .socialMedia {
@@ -85,5 +83,33 @@ footer {
     .footer-contacts {
         width: 100%;
         max-width: 400px;
+    }
+}
+
+@media (max-width: 570px) {
+    .footer-content {
+        padding: 10px 20px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+        margin: 0 20px;
+    }
+
+    .citation-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-contacts {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
     }
 }

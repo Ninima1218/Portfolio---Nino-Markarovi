@@ -9,7 +9,7 @@ import github from '../../assets/icons/github.png';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="footer" className="footer">
       <div className="citation">
         <p className="citation-text">
           "Success is not final; failure is not fatal: it is the courage to continue that counts"
@@ -31,7 +31,7 @@ const Footer = () => {
           { src: fb, alt: 'Facebook Logo', href: 'https://www.facebook.com/nino.ninu28/' },
           { src: insta, alt: 'Instagram Logo', href: 'https://www.instagram.com/no_mark_8/' },
           { src: linkedin, alt: 'LinkedIn Logo', href: 'https://www.linkedin.com/in/nino-markarovi-7a729929b/' },
-          { src: gmail, alt: 'Gmail Logo', href: 'mailto:ninima1218@gmail.com' },
+          { src: gmail, alt: 'Gmail Logo', href: 'https://mail.google.com/mail/?view=cm&to=ninima1218@gmail.com' },
           { src: github, alt: 'GitHub Logo', href: 'https://github.com/Ninima1218' },
         ].map((icon, index) => (
           <a
