@@ -133,14 +133,15 @@
         padding-inline: clamp(2px, 1vw, 8px);
     }
 }
-/* === 700px ↓ — карточки в один столбик */
+
 @media (max-width: 700px) {
     .tech-grid {
         grid-template-columns: repeat(1, clamp(70px, 50vw, 120px));
+        justify-items: center;
     }
 
     .tech-column {
-        width: clamp(140px, 30vw, 180px);
+        width: clamp(120px, 30vw, 150px);
     }
 
     .tech-wrapper {
@@ -149,31 +150,44 @@
     }
 }
 
-/* === 600px ↓ — колонки в столбик */
 @media (max-width: 600px) {
-    .tech-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: clamp(28px, 5vw, 40px);
-    }
-
-    .tech-column {
-        width: 100%;
-        max-width: 260px;
-    }
-
     .tech-grid {
-        grid-template-columns: repeat(2, clamp(75px, 15vw, 95px));
+            grid-template-columns: repeat(1, clamp(65px, 50vw, 110px));
+        }
+    
+    .tech-column {
+        width: clamp(90px, 26vw, 120px);
+    }
+
+    .tech-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: clamp(14px, 4vw, 24px);
+        padding-inline: clamp(4px, 2vw, 12px);
+    }
+
+    .tech-card {
+        width: clamp(60px, 10vw, 80px);
+        height: clamp(40px, 8vw, 50px);
+        min-height: calc(clamp(30px, 8vw, 40px) + 32px);
+        padding-bottom: clamp(8px, 1.2vw, 12px);
     }
 }
 
-/* === 480px ↓ — финальная настройка */
 @media (max-width: 480px) {
-    .tech-column {
-        max-width: 240px;
-    }
-
     .tech-wrapper {
-        gap: 28px;
-    }
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(24px, 5vw, 36px);
+        }
+    
+        .tech-column {
+            width: 100%;
+            max-width: 240px;
+        }
+    
+        .tech-grid {
+            grid-template-columns: repeat(1, clamp(75px, 60vw, 120px));
+        }
 }

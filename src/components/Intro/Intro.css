@@ -1,6 +1,7 @@
 
 .intro {
     width: 100vw;
+    min-height: 100svh;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
@@ -58,7 +59,7 @@
 }
 
 h1 {
-    font-size: clamp(32px, 6vw, 56px);
+    font-size: clamp(28px, 5vw, 52px);
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
