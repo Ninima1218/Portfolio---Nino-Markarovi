@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import NavLink from '../../components/NavLinks/NavLinks';
-import logo from './assets/logo.jpg';
-import menuIcon from './assets/menu.png';
+import logo from '../../assets/logo.jpg';
+import menuIcon from '../../assets/menu.png';
 import './Header.css';
 
 const Header: React.FC = () => {

@@ -2,16 +2,16 @@ import { useState, useRef, useEffect } from 'react';
 import './Vision.css';
 
 const photos = [
-  './src/assets/journey/photo1.webp',
-  './src/assets/journey/photo2.webp',
-  './src/assets/journey/photo3.webp',
-  './src/assets/journey/photo4.webp',
-  './src/assets/journey/photo5.webp',
-  './src/assets/journey/photo6.webp',
-  './src/assets/journey/photo7.webp',
-  './src/assets/journey/photo8.webp',
-  './src/assets/journey/photo9.webp',
-  './src/assets/journey/photo10.webp'
+  '../../../src/assets/journey/photo1.webp',
+  '../../../src/assets/journey/photo2.webp',
+  '../../../src/assets/journey/photo3.webp',
+  '../../../src/assets/journey/photo4.webp',
+  '../../../src/assets/journey/photo5.webp',
+  '../../../src/assets/journey/photo6.webp',
+  '../../../src/assets/journey/photo7.webp',
+  '../../../src/assets/journey/photo8.webp',
+  '../../../src/assets/journey/photo9.webp',
+  '../../../src/assets/journey/photo10.webp'
 ];
 
 const Vision = () => {
