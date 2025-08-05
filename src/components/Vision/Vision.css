@@ -1,51 +1,168 @@
-.vision {
+.vision-section {
     width: 100%;
-    padding: 60px 40px;
-    background: linear-gradient(to right, #202020, #030303);
+    padding: 10px 0;
+    background: linear-gradient(to right, #141414, #474747);
     color: white;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow-x: visible;
 }
 
-.vision-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+.vision-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: clamp(12px, 4vw, 28px);
+    display: flex;
+    flex-direction: column;
 }
 
-.journey,
-.my-vision {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-left: 3px solid #d3a857;
-    padding: 30px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+.vision-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 4vw, 32px);
+    align-items: flex-start;
 }
 
-.journey:hover,
-.my-vision:hover {
-    transform: translateY(-5px);
+.vision-text {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 2vw, 16px);
+    padding-bottom: 10px;
 }
 
-.vision h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+.vision-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(12px, 2vw, 17px);
+    font-style: italic;
+    color: #f7e1b9;
+    opacity: 0.85;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: clamp(2px, 1vw, 4px);
 }
 
-.vision p {
+.vision-quote span {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.8em;
+    font-style: normal;
+    color: #aaa;
+    text-align: right;
+}
+
+.vision-description {
     line-height: 1.6;
-    font-size: 17px;
+    font-size: clamp(12px, 2.2vw, 16px);
+    font-family: 'Allura', sans-serif;
+    font-style: italic;
 }
 
-/* 📱 Адаптив */
+.vision-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.vision-title h2 {
+    font-size: clamp(24px, 3.5vw, 32px);
+    margin: 0;
+    color: #f7e1b9;
+}
+
+.photo-strip {
+    width: 100%;
+    display: flex;
+    gap: clamp(12px, 2vw, 20px);
+    overflow-x: auto;
+    padding-inline: clamp(20px, 4vw, 32px);
+    margin-bottom: clamp(16px, 3vw, 20px);
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: grab;
+}
+
+.photo-strip.dragging {
+    cursor: grabbing;
+}
+
+.photo-strip::-webkit-scrollbar {
+    display: none;
+}
+
+.photo-strip img {
+    height: 140px;
+    min-width: 160px;
+    border-radius: 6px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+.photo-strip img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.photo-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 26px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
-    .vision-wrapper {
+    .vision-columns {
         grid-template-columns: 1fr;
     }
 
-    .journey,
-    .my-vision {
-        padding: 20px;
+    .vision-title {
+        margin-top: clamp(12px, 3vw, 24px);
+    }
+
+    .photo-strip img {
+        height: 120px;
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-quote {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .photo-strip {
+        padding-inline: 16px;
+    }
+
+    .photo-strip img {
+        height: 100px;
+        min-width: 120px;
     }
 }

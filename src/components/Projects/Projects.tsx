@@ -1,38 +1,55 @@
-import Justice from '@assets/projects/justice.png';
-import LanguageApp from '@assets/projects/language-app.png';
+
+import { useEffect, useRef } from 'react';
 import './Projects.css';
+import { projects } from '../projectsData/projectsData';
 
-const projects = [
-  {
-    title: 'Responsive Website for a Law Firm',
-    description: 'Elegant and functional site showcasing services and contact information. Built with HTML, CSS, and JS for seamless cross-device experience.',
-    imageUrl: Justice,
-    link: 'https://project-itgirlschool.github.io/fr83_justice/#services',
-  },
-  {
-    title: 'Speak Up: Language Learning Platform',
-    description: 'Self-directed template using React + MobX. Features grammar, vocabulary themes, and listening components for immersive learning.',
-    imageUrl: LanguageApp,
-    link: 'https://github.com/Ninima1218/language-app/tree/mobx',
-  },
-];
+const Projects = () => {
+    const projectsRef = useRef<HTMLDivElement>(null);
 
-const Projects = () => (
-  <section id="projects" className="projects-section">
-    <h2>Projects</h2>
-    <div className="projects-grid">
-      {projects.map(({ title, description, imageUrl, link }, i) => (
-        <div key={i} className="projects-item">
-          <img src={imageUrl} alt={title} />
-          <h3>{title}</h3>
-          <p>{description}</p>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            VIEW PROJECT
-          </a>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        const projectItems = projectsRef.current?.querySelectorAll('.projects-item');
+        if (projectItems) {
+            projectItems.forEach((item) => observer.observe(item));
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <section className="projects-section" id="projects">
+            <div className="projects-content">
+                <h2>Projects</h2>
+                <div className="projects-grid" ref={projectsRef}>
+                    {projects.map((project, index) => (
+                        <div key={index} className="projects-item fade-in">
+                            <img src={project.imageUrl} alt={project.title} />
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                            <ul className="project-stack">
+                                {project.stack.map((tech, techIndex) => (
+                                    <li key={techIndex}>{tech}</li>
+                                ))}
+                            </ul>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                View Project
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
 
 export default Projects;

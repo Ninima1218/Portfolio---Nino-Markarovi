@@ -2,10 +2,10 @@ import './NavLinks.css';
 
 const NavLink = () => {
   const links = [
-    { href: '#intro', label: 'Home' },
-    { href: '#about', label: 'About' },
+    { href: '#header', label: 'Home' },
     { href: '#skills', label: 'Skills' },
-    { href: '#portfolio', label: 'Portfolio' },
+    { href: '#projects', label: 'Projects' },
+    { href: '#vision', label: 'My Journey' },
     { href: '#footer', label: 'Contacts' },
   ];
 

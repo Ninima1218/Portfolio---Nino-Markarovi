@@ -1,34 +1,86 @@
 #root {
-  max-width: 1280px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.layout-container {
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms ease;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #818181aa);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #6e6e6eaa);
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #bcbcbc;
+  transform: scale(1.1);
+}
+
+.scroll-top:focus {
+  outline: none;
+}
+
+.scroll-top-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
+  color: #3a3a3a;
+  opacity: 1;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  .logo.animated {
     animation: logo-spin infinite 20s linear;
   }
 }
