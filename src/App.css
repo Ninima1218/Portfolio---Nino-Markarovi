@@ -7,9 +7,10 @@
 
 .app {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   display: block;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .layout-container {
@@ -66,8 +67,14 @@
   transform: scale(1.1);
 }
 
+.scroll-top:focus {
+  outline: none;
+}
+
 .scroll-top-icon {
-  font-size: 28px;
+  width: 1em;
+  height: 1em;
+  font-size: 24px;
   color: #3a3a3a;
   opacity: 1;
 }

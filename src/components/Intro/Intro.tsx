@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="intro-content">
         <h1>Nino Markarovi</h1> 
         <h3>Frontend Developer</h3>
-        <p className='intro-p'>Hello! I'm Nino, a frontend developer from Tbilisi, Georgia, with a keen eye for design and a passion for creating stylish and functional web applications. </p>
+        <p className='intro-p'>Hi, I’m Nino — crafting harmony through clean code and pixel precision from the heart of Tbilisi. </p>
         <a
           href="https://mail.google.com/mail/?view=cm&to=ninima1218@gmail.com"
           className="intro-button"

@@ -3,9 +3,9 @@ import './NavLinks.css';
 const NavLink = () => {
   const links = [
     { href: '#header', label: 'Home' },
-    { href: '#vision', label: 'My Journey' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
+    { href: '#vision', label: 'My Journey' },
     { href: '#footer', label: 'Contacts' },
   ];
 
