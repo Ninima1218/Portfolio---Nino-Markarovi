@@ -3,7 +3,7 @@ import './Intro.css';
 const Intro = () => {
   return (
     <section className="intro">
-      <img src="/src/assets/myphoto.webp" alt="Intro background" className="intro-bg" />
+      <img src="./src/assets/myphoto.webp" alt="Intro background" className="intro-bg" />
       <div className="intro-content">
         <h1>Nino Markarovi</h1> 
         <h3>Frontend Developer</h3>

@@ -1,9 +1,9 @@
-import Justice from '@assets/projects/justice.webp';
+import Justice from './assets/projects/justice.webp';
 
-import BeautySalon from '@assets/projects/alchemy.webp';
-import NailMaster from '@assets/projects/natali-nails.webp';
-import Fistess from '@assets/projects/fitness-centre.webp';
-import VetClinic from '@assets/projects/veterinary-clinic.webp';
+import BeautySalon from './assets/projects/alchemy.webp';
+import NailMaster from './assets/projects/natali-nails.webp';
+import Fistess from './assets/projects/fitness-centre.webp';
+import VetClinic from './assets/projects/veterinary-clinic.webp';
 
 export const projects = [
   {
