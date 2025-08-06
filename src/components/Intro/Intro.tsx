@@ -1,9 +1,10 @@
 import './Intro.css';
+import myPhoto from '../../../src/assets/myphoto.webp';
 
 const Intro = () => {
   return (
     <section className="intro">
-      <img src="../../../src/assets/myphoto.webp" alt="Intro background" className="intro-bg" />
+      <img src={myPhoto} alt="Intro background" className="intro-bg" />
       <div className="intro-content">
         <h1>Nino Markarovi</h1> 
         <h3>Frontend Developer</h3>
