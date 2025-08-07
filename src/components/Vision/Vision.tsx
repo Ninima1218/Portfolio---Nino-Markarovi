@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
 import './Vision.css';
-import photo1 from '../../../src/assets/journey/photo1.webp';
-import photo2 from '../../../src/assets/journey/photo2.webp';
-import photo3 from '../../../src/assets/journey/photo3.webp';
-import photo4 from '../../../src/assets/journey/photo4.webp';
-import photo5 from '../../../src/assets/journey/photo5.webp';
-import photo6 from '../../../src/assets/journey/photo6.webp';
-import photo7 from '../../../src/assets/journey/photo7.webp';
-import photo8 from '../../../src/assets/journey/photo8.webp';
-import photo9 from '../../../src/assets/journey/photo9.webp';
-import photo10 from '../../../src/assets/journey/photo10.webp';
+import photo1 from '../../assets/journey/photo1.webp';
+import photo2 from '../../assets/journey/photo2.webp';
+import photo3 from '../../assets/journey/photo3.webp';
+import photo4 from '../../assets/journey/photo4.webp';
+import photo5 from '../../assets/journey/photo5.webp';
+import photo6 from '../../assets/journey/photo6.webp';
+import photo7 from '../../assets/journey/photo7.webp';
+import photo8 from '../../assets/journey/photo8.webp';
+import photo9 from '../../assets/journey/photo9.webp';
+import photo10 from '../../assets/journey/photo10.webp';
 
 const photos = [
   photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10

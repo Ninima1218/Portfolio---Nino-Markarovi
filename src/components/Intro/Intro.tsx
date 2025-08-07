@@ -1,5 +1,5 @@
 import './Intro.css';
-import myPhoto from '../../../src/assets/myphoto.webp';
+import myPhoto from '../../assets/myphoto.webp';
 
 const Intro = () => {
   return (
