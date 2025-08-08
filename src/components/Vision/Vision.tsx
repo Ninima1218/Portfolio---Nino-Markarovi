@@ -1,17 +1,27 @@
 import { useState, useRef, useEffect } from 'react';
 import './Vision.css';
+import Photo1 from '../../assets/journey/photo1.webp';
+import Photo2 from '../../assets/journey/photo2.webp';
+import Photo3 from '../../assets/journey/photo3.webp';
+import Photo4 from '../../assets/journey/photo4.webp';
+import Photo5 from '../../assets/journey/photo5.webp';
+import Photo6 from '../../assets/journey/photo6.webp';
+import Photo7 from '../../assets/journey/photo7.webp';
+import Photo8 from '../../assets/journey/photo8.webp';
+import Photo9 from '../../assets/journey/photo9.webp';
+import Photo10 from '../../assets/journey/photo10.webp';
 
 const photos = [
-  '/src/assets/journey/photo1.webp',
-  '/src/assets/journey/photo2.webp',
-  '/src/assets/journey/photo3.webp',
-  '/src/assets/journey/photo4.webp',
-  '/src/assets/journey/photo5.webp',
-  '/src/assets/journey/photo6.webp',
-  '/src/assets/journey/photo7.webp',
-  '/src/assets/journey/photo8.webp',
-  '/src/assets/journey/photo9.webp',
-  '/src/assets/journey/photo10.webp'
+  Photo1,
+  Photo2,
+  Photo3,
+  Photo4,
+  Photo5,
+  Photo6,
+  Photo7,
+  Photo8,
+  Photo9,
+  Photo10
 ];
 
 const Vision = () => {
@@ -84,9 +94,9 @@ const Vision = () => {
     <section className="vision-section" id="vision">
       <div className="vision-content">
         <div className="vision-columns">
-        <div className="vision-title">
-        <h2>My Journey</h2>
-        </div>
+          <div className="vision-title">
+            <h2>My Journey</h2>
+          </div>
           <div className="vision-text">
             <div className="vision-quote">
               <p>

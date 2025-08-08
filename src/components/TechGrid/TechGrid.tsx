@@ -1,25 +1,38 @@
 import './TechGrid.css';
+import HTML from '../../assets/techIcons/html.svg';
+import CSS from '../../assets/techIcons/css.svg';
+import JavaScript from '../../assets/techIcons/javascript.svg';
+import TypeScript from '../../assets/techIcons/typescript.svg';
+import ReactIcon from '../../assets/techIcons/react.svg';
+import Vite from '../../assets/techIcons/vite.svg';
+import Sass from '../../assets/techIcons/sass.svg';
+import Bootstrap from '../../assets/techIcons/bootstrap.svg';
+import Tilda from '../../assets/techIcons/tilda.svg';
+import Git from '../../assets/techIcons/git.svg';
+import GitHub from '../../assets/techIcons/github.svg';
+import Figma from '../../assets/techIcons/figma.svg';
+import API from '../../assets/techIcons/api.svg';
 
 const coreWeb = [
-  { name: 'HTML', src: '/src/assets/techIcons/html.svg' },
-  { name: 'CSS', src: '/src/assets/techIcons/css.svg' },
-  { name: 'JavaScript', src: '/src/assets/techIcons/javascript.svg' },
-  { name: 'TypeScript', src: '/src/assets/techIcons/typescript.svg' }
+  { name: 'HTML', src: HTML },
+  { name: 'CSS', src: CSS },
+  { name: 'JavaScript', src: JavaScript },
+  { name: 'TypeScript', src: TypeScript }
 ];
 
 const libraries = [
-  { name: 'React', src: '/src/assets/techIcons/react.svg' },
-  { name: 'Vite', src: '/src/assets/techIcons/vite.svg' },
-  { name: 'Sass', src: '/src/assets/techIcons/sass.svg' },
-  { name: 'Bootstrap', src: '/src/assets/techIcons/bootstrap.svg' },
-  { name: 'Tilda', src: '/src/assets/techIcons/tilda.svg' }
+  { name: 'React', src: ReactIcon },
+  { name: 'Vite', src: Vite },
+  { name: 'Sass', src: Sass },
+  { name: 'Bootstrap', src: Bootstrap },
+  { name: 'Tilda', src: Tilda }
 ];
 
 const tools = [
-  { name: 'Git', src: '/src/assets/techIcons/git.svg' },
-  { name: 'GitHub', src: '/src/assets/techIcons/github.svg' },
-  { name: 'Figma', src: '/src/assets/techIcons/figma.svg' },
-  { name: 'API', src: '/src/assets/techIcons/api.svg' }
+  { name: 'Git', src: Git },
+  { name: 'GitHub', src: GitHub },
+  { name: 'Figma', src: Figma },
+  { name: 'API', src: API }
 ];
 
 const TechGrid = () => (
